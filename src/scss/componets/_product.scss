@@ -1,0 +1,55 @@
+.product{
+  position: relative;
+  &__image {
+    margin-bottom: 20px;
+    img{
+      object-fit: cover;
+      max-height: 100%;
+    }
+  }
+  &__prop{
+    display: inline-block;
+    color: #111;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+  }
+  .new{
+    background-image: url('../img/bolt.svg');
+  }
+  .hot{
+    background-image: url('../img/kz-fire.png');
+  }
+  .best{
+    background-image: url('../img/kz-number-one.png');
+  }
+  .rate{
+    background-image: url('../../img/star-line.png');
+  }
+  &__title {
+    color: var(--color-tundora);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    a{
+      &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+      }
+    }
+  }
+  &__price {
+    color:var(--color-dark);
+    font-size: 13px;
+    font-weight: 700;
+  }
+  }

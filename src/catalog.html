@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  @include('html/_header-catalog.html')
+  <main class="main">
+    @include('html/_hero-catalog.html')
+    <section class="catalog">
+      <h2 class="visually-hidden">Catalog</h2>
+      @include('html/_breadcrumbs.html')
+    </section>
+    <div class="catalog-content">
+      <div class="container container-narrow">
+        @include('html/_catalog-fillter.html')
+        @include('html/_catalog-grid.html')
+      </div>
+    </div>
+  </main>
+  @include('html/_footer.html')
+
+</body>
+
+</html>

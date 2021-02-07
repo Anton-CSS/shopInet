@@ -1,0 +1,135 @@
+.footer{
+  &__content{
+    padding: 98px 250px;
+    padding-bottom: 0;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 95px;
+  }
+  &__title {
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 37px;
+  }
+
+  &__link {
+    font-size: 13px;
+    color: var(--color-tundora);
+    &--row {
+      color: var(--color-dark);
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 18px;
+    }
+  }
+
+  &__list{
+    &--row{
+      display: flex;
+      align-items: center;
+      .footer__item{
+        margin-bottom: 0;
+        &:not(:last-child){
+          margin-right: 43px;
+        }
+      }
+    }
+  }
+  &__form{
+    position: relative;
+    transform: translateY(3px);
+    width: 646px;
+    margin-bottom: 25px;
+  }
+  &__colum{
+    &:nth-child(2){
+      margin-left: -60px;
+    }
+  }
+  &__text {
+    color:var(--color-tundora);
+    font-size: 13px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding: 40px 0;
+  }
+}
+
+.subscribe-form{
+  &__title {
+    margin: 0;
+    margin-bottom: 38px;
+    color: var(--color-tundora);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  &__btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    color: var(--color-dark);
+    font-size: 13px;
+  }
+  &__field{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid var(--color-dark);
+    padding-bottom: 10px;
+    input{
+      padding-right: 80px;
+      width: 100%;
+      border: none;
+      outline: none;
+      color: var(--color-dark);
+      &::placeholder {
+        opacity: 0.5;
+        color: var(--color-tundora);
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.social{
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+  &__link{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &--tw{
+      background-image: url(../../img/twitter.png);
+    }
+    &--fb{
+      background-image: url(../../img/facebook.png);
+    }
+    &--inst{
+      background-image: url(../../img/instagram.png);
+    }
+    &--pin{
+      background-image: url(../../img/pinterest.png);
+    }
+  }
+}

@@ -107,13 +107,13 @@ ul {
     height: 2px;
     background-color: currentColor;
     opacity: 0;
-    transition: opacity 0.15s;
+    transition: opacity 0.5s linear;
   }
 
   &:hover {
     &::before {
       opacity: 1;
-      transition: opacity 0.15s;
+      transition: opacity 0.5s linear;
     }
   }
 

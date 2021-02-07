@@ -1,0 +1,52 @@
+.clothes-banners{
+  padding-top: 45px;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 100%;
+  }
+  &__link{
+    position: relative;
+    flex-basis: 50%;
+    padding: 50px;
+    min-height: 420px;
+    background-color:var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before{
+      content:'';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-color: rgba(#d70808, 0.1);
+    }
+    &--man{
+      background-image: url(../../img/man.jpg);
+    }
+    &--women{
+      background-image: url(../../img/clothes.jpg);
+    }
+  }
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__text{
+    position: relative;
+    z-index: 1;
+  }
+}
